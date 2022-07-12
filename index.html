@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Visual Sorting</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav justify-content-between pt-3 pb-1">
+        <div class="container-fluid">
+            <a class="navbar-brand mb-0 h1 me-2">Visualisation of Basic Sorting Algorithms</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav justify-content-between pb-4">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <button class="btn btn-outline-warning mt-1 mb-1 me-2" type="button" id="a_generate">New array</button>&nbsp; &nbsp;
+                <div class="algos">
+                    <button class="btn btn-outline-info mt-1 mb-1 me-1" type = "button" >Merge sort</button>
+                    <button class="btn btn-outline-info mt-1 mb-1 me-1" type = "button" >Bubble sort</button>
+                    <button class="btn btn-outline-info mt-1 mb-1 me-1" type = "button" >Selection sort</button>
+                    <button class="btn btn-outline-info mt-1 mb-1 me-1" type = "button" >Insertion sort</button>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="array-inputs me-5">
+                    <p class="text-white-50">Size of array</p>
+                    <input id="a_size" type="range" min=10 max=150 step=1 value=35>
+                </div>
+                <div class="array-inputs me-5">
+                    <p class="text-white-50">Speed</p>
+                    <input id="a_speed" type="range" min=1 max=15 step=1 value=7>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content max-width-1 m-auto"></div>
+    <section>
+    <div id="array_container">
+
+    </div></section>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/visualisations.js"></script>
+
+    <script src="./js/selection_sort.js"></script>
+    <script src="./js/insertion_sort.js"></script>
+    <script src="./js/merge_sort.js"></script>
+    <script src="./js/bubble_sort.js"></script>
+</body>
+
+</html>
